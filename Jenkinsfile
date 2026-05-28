@@ -1,18 +1,19 @@
-pipeline{
+pipeline {
   agent any
-  satages{
+  
+  satages {
     stage ('Build'){
-      steps{
+      steps {
         echo 'Building ...'
       }
     }
     stage ('Testing'){
-      steps{
+      steps {
         echo 'Realizando testing ...'
       }
     }
     stage ('Deploy'){
-      step{
+      step {
         echo 'Realizando el deploy final ...'
       }
     }
